@@ -1,0 +1,51 @@
+# Plant_LRR-PRR pipeline is constructed to extract genome-wide LRR-RLP and LRR-RLK more precisely than anyother previous pipelines.
+
+
+#important tools to install before proceding to use the pipeline.
+1. SignalP4.1
+2. Phobius-1.1
+3. Interproscan-5
+
+# Genome-wide LRR-RLPs and RLK extraction is pureline based on the primary-proteome data, make sure there are no dulicates of the same gene or the multiple transcripts from the same gene.
+# At the start of the pipeline, set the paths for the directories having your proteomedata, output directory, Pfam-33.0 domain IDs, four differnt HMM model directory, signalpP4.1 software, Phobius-1.1 software, and Interproscan software.
+
+#Pfam directory: 
+Since the Pfam directory is large we cannot able to upload it directly into the github but we are sharing the URL to downlowd it. So download it and add into specific path.
+
+URL: https://cloud.rz.uni-kiel.de/index.php/s/nB9AmmHrtBYMWPw
+
+
+
+
+# different conda environemnt
+1. HMM  # In this conda environemnt we install hmmer-3.12 and seqtk tools.
+We have attached the yml file for this conda environment.
+
+
+2. annotation # In this conda environemnt we installed interproscan-5.
+We have attached the yml file for this conda environment.
+
+
+# Running external softwares like "DeepTMHMM" and "NetGPI"
+### After the interproscan analysis, you should extract the "LRR-KINASE.fasta" and "newrlp_ips_list.fasta" files and externally (web-based) run them in both "DEEPTMHMM" and "NetGPI" softwares and the output of these runs should store in the output directory.
+
+Output of DeepTMHMM
+1. ${output}/biolib_results/RLP_predicted_topologies.3line         # output for RLPs 
+2. ${output}/biolib_results/RLK_predicted_topologies.3line         # output for RLKs
+
+
+output of NetGPI, for identifying GPI anchored proteins
+1. ${output}/output.gff3                                           # output for RLPs 
+2. ${output}/kinase.output.gff3                                    # output for RLKs
+
+
+# FINAL LRR-RLK outputs
+1. kinase.strict.list.txt                                          # output file containing all complete LRR-RLKs  
+2. kinase.relaxed.list.txt                                         # output file containing all incomplete LRR-RLKs 
+3. pkinase.genelist.txt                                            # output file containing all crude LRR-RLKs
+
+# FINAL LRR-RLK outputs
+1. strict.list.txt                                                 # output file containing all complete LRR-RLPs
+2. relaxed.list.txt                                                # output file containing all incomplete LRR-RLPs
+3. newrlp_ips_list.txt                                             # output file containing all crude LRR-RLPs
+
