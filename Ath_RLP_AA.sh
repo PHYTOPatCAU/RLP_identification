@@ -1,27 +1,27 @@
 #!/bin/bash
 
 # Path variables ditected towards different directories, datasets, and softwares.
-output='/work_beegfs/suaph302/output/Athout'
-genome='/work_beegfs/suaph302/IPS/genome.proteins/Athaliana/Athaliana_Araport.primaryTransc.fasta'
-c3c2f='/work_beegfs/suaph302/Pfam/NC2C3.hmm'
-pfam='/work_beegfs/suaph302/Pfam'
-signalp='/work_beegfs/suaph302/scripts/signalp-4.1/signalp'
-phobius='/work_beegfs/suaph302/phobius/phobius.pl'
-ips='/work_beegfs/suaph302/IPS/interproscan-5.65-97.0/interproscan.sh'
-gff='/work_beegfs/suaph302/IPS/genome.proteins/Athaliana/Athaliana_447_Araport11.gene.gff3'
-nu_genome='/work_beegfs/suaph302/IPS/genome.proteins/Athaliana/Athaliana_447_TAIR10.fa'
-gffread='/work_beegfs/suaph302/gffread/gffread/gffread'
+output='~/output/Athout'
+genome='~/IPS/genome.proteins/Athaliana/Athaliana_Araport.primaryTransc.fasta'
+c3c2f='~/Pfam/NC2C3.hmm'
+pfam='~/Pfam'
+signalp='~/scripts/signalp-4.1/signalp'
+phobius='~/phobius/phobius.pl'
+ips='~/IPS/interproscan-5.65-97.0/interproscan.sh'
+gff='~/IPS/genome.proteins/Athaliana/Athaliana_447_Araport11.gene.gff3'
+nu_genome='~/IPS/genome.proteins/Athaliana/Athaliana_447_TAIR10.fa'
+gffread='~/gffread/gffread/gffread'
 
 
 
 
 # Path variables directed towards files containing Pfam-33.0 domain IDs for NLRs, RLK and RLP resistant genes.
-NLR=$(cat /work_beegfs/suaph302/Pfam/NLR_DM_list.txt)
-LRR=$(cat /work_beegfs/suaph302/Pfam/Lrr_DM_list.txt)
-RLK=$(cat /work_beegfs/suaph302/Pfam/Pkinase_DM_list.txt)
+NLR=$(cat ~/Pfam/NLR_DM_list.txt)
+LRR=$(cat ~/Pfam/Lrr_DM_list.txt)
+RLK=$(cat ~/Pfam/Pkinase_DM_list.txt)
 
 # path to scripts: needed for extracting results from server based DEEPTMHMM analysis.
-scripts='/work_beegfs/suaph302/scripts/codes_RLP_AA'
+scripts='~/scripts/codes_RLP_AA'
 
 
 
