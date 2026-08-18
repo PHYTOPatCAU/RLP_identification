@@ -1,23 +1,5 @@
 **###### The PlantLRR-PRR pipeline is constructed to extract genome-wide LRR-RLP and LRR-RLK more precisely than any other previous pipeline.**
 
-**###### 5prime\_extension is constructed to identify the correct start codon of all the annotated genes in your input data.**
-
-
-
-
-
-
-
-\#### First, clone the complete git directory
-
-**git clone https://github.com/PHYTOPatCAU/RLP\_identification.git**
-
-
-
-
-
-
-
 \##### Install all the conda environments included in the "envs" directory
 
 1. **HMM                   ##### used in PlantLRR-PRR pipeline** 
