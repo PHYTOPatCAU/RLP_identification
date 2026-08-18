@@ -1,3 +1,8 @@
+This is the Git-Repository for the RLP detection pipeline developed by Nandeesh Jalahalli Rangegowda and Remco Stam (Christian-Albrechts-University of Kiel).
+
+More detailed documentation will follow soon.
+
+
 **###### The PlantLRR-PRR pipeline is constructed to extract genome-wide LRR-RLP and LRR-RLK more precisely than any other previous pipeline.**
 
 **###### 5prime\_extension is constructed to identify the correct start codon of all the annotated genes in your input data.**
