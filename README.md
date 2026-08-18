@@ -1,4 +1,4 @@
-(https://github.com/user-attachments/files/31171780/Readme2.md)
+
 **###### The PlantLRR-PRR pipeline is constructed to extract genome-wide LRR-RLP and LRR-RLK more precisely than any other previous pipeline.**
 
 **###### 5prime\_extension is constructed to identify the correct start codon of all the annotated genes in your input data.**
