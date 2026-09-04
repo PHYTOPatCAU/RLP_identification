@@ -297,10 +297,10 @@ grep 'SP+TM' ${output}/biolib_results/RLP_predicted_topologies.3line | awk '{pri
 
 
 # running signalp-4.1 on the extracted rlp set after IPS analyzis.
-# With a senstivity of 0.11, we extracted proteins with probable signal peptides.
+# With a senstivity of 0.45, we extracted proteins with probable signal peptides.
 
 
-${signalp} -f short -u 0.11 -U 0.11 ${output}/newrlp_ips_list.fasta > ${output}/signalp.out
+${signalp} -f short -u 0.45 -U 0.45 ${output}/newrlp_ips_list.fasta > ${output}/signalp.out
 grep 'Y' ${output}/signalp.out | grep -v "#" | awk '{print $1}' | sort | uniq >> ${output}/Only.SP.list.out
 cat ${output}/Only.SP.list.out | sort | uniq > ${output}/Signalp.list.txt
 
@@ -350,10 +350,10 @@ grep 'SP+TM' ${output}/biolib_results/RLK_predicted_topologies.3line | awk '{pri
 
 
 # running signalp-4.1 on the extracted rlp set after IPS analyzis.
-# With a senstivity of 0.11, we extracted proteins with probable signal peptides.
+# With a senstivity of 0.45, we extracted proteins with probable signal peptides.
 
 
-${signalp} -f short -u 0.11 -U 0.11 ${output}/LRR_KINASE.fasta > ${output}/kinase.signalp.out
+${signalp} -f short -u 0.45 -U 0.45 ${output}/LRR_KINASE.fasta > ${output}/kinase.signalp.out
 grep 'Y' ${output}/kinase.signalp.out | grep -v "#" | awk '{print $1}' | sort | uniq >> ${output}/kinase.Only.SP.list.out
 cat ${output}/kinase.Only.SP.list.out | sort | uniq > ${output}/kinase.Signalp.list.txt
 
